@@ -1,0 +1,20 @@
+{
+  "name": "awesome-sec-audit",
+  "version": "1.0.0",
+  "description": "Awesome security auditing tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.debug.js",
+    "tslint": "tslint assets/* || true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "ts-loader": "^1.2.2",
+    "typescript": "^2.0.10",
+    "webpack": "^1.13.3"
+  }
+}
