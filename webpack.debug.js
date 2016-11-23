@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
-  entry: "./assets/awesome-sec-audit.tsx",
+  entry: "./assets/awesome-sec-audit-run.tsx",
 
   output: {
     filename: "awesome-sec-audit.js",
