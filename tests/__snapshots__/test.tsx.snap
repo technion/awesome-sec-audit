@@ -1,0 +1,28 @@
+exports[`test render displays correctly 1`] = `
+<Start>
+  <div>
+    <button
+      onClick={[Function]}>
+      Click to get started!
+    </button>
+  </div>
+</Start>
+`;
+
+exports[`test render displays correctly 2`] = `
+<Start>
+  <div>
+    <input />
+    <button
+      onClick={[Function]}>
+      test2
+    </button>
+  </div>
+</Start>
+`;
+
+exports[`test render displays correctly 3`] = `
+<Start>
+  <div />
+</Start>
+`;
