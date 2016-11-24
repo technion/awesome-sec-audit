@@ -16,5 +16,9 @@ npm tslint
 
 ## Using
 
-Include the generated script in an HTML file.
+Include the generated script in an HTML file, like so:
+```
+<div id="content" class="container"></div>
+<script src="awesome-sec-audit.js" type="text/javascript"></script>
+```
 

@@ -20,7 +20,7 @@ test('render displays correctly', () => {
     tree = mountToJson(component);
     expect(tree).toMatchSnapshot();
 
-    component.find("input").simulate("change", {target: {value: 30} });
+    component.find("input").get(0).value = "29";
     component.find("button").simulate("click");
     tree = mountToJson(component);
     expect(tree).toMatchSnapshot();

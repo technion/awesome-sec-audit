@@ -2,6 +2,7 @@ exports[`test render displays correctly 1`] = `
 <Start>
   <div>
     <button
+      className="btn btn-info"
       onClick={[Function]}>
       Click to get started!
     </button>
@@ -14,8 +15,9 @@ exports[`test render displays correctly 2`] = `
   <div>
     <input />
     <button
+      className="btn btn-info"
       onClick={[Function]}>
-      test2
+      Submit answer
     </button>
   </div>
 </Start>
@@ -23,6 +25,19 @@ exports[`test render displays correctly 2`] = `
 
 exports[`test render displays correctly 3`] = `
 <Start>
-  <div />
+  <div>
+    <button
+      className="btn btn-danger">
+      You have failed and will get hacked.
+    </button>
+    <br />
+    <br />
+    <a
+      className="btn btn-info"
+      href="https://github.com/technion/awesome-sec-audit">
+      Get source here.
+    </a>
+    <br />
+  </div>
 </Start>
 `;

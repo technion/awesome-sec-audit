@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "dev": "webpack --config webpack.debug.js",
-    "tslint": "tslint assets/* || true"
+    "tslint": "tslint assets/* || true",
+    "build": "webpack -p --config webpack.prod.js"
+
   },
   "author": "",
   "license": "ISC",
