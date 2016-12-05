@@ -2,8 +2,8 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 interface IstartProps {
-    menu: number; // Represents which stage of the quiz user is in
-    days?: number; // Days entered as answer by user
+    readonly menu: number; // Represents which stage of the quiz user is in
+    readonly days?: number; // Days entered as answer by user
 }
 
 export default class Start extends React.Component<{}, IstartProps> {
