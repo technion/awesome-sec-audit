@@ -7,8 +7,7 @@ interface IstartProps {
 }
 
 export default class Start extends React.Component<{}, IstartProps> {
-    "use strict";
-    constructor(props) {
+    constructor(props: IstartProps) {
         super(props);
         this.state = {menu: 0};
         this.getStarted = this.getStarted.bind(this); // Just Javascript things
@@ -58,7 +57,7 @@ export default class Start extends React.Component<{}, IstartProps> {
             You have failed and will get hacked.
             </button>
             Maximum acceptable password lifetime is {this.state.days - 1} days<br />
-            No but seriously, this app has been a great template for React/Typescript/Jest applications. 
+            No but seriously, this app has been a great template for React/Typescript/Jest applications.
             <br /><a href="https://github.com/technion/awesome-sec-audit" className="btn btn-info">Get source here.</a>
 
             <br />Also, this is less satyrical than you think and heavily reflects most vulnerability assessments I've sat through.
