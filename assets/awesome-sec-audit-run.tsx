@@ -5,7 +5,13 @@ import Start from "./awesome-sec-audit.tsx";
 
 // Dedicating a file to this basic call allows us to import all major modules
 // into test suites.
-ReactDOM.render(
-    <Start />,
-    document.getElementById("content")
-);
+const item = document.getElementById("content")
+if (item == null) {
+    console.log("Render container missing");
+}
+    else {
+    ReactDOM.render(
+        <Start />,
+        item
+    );
+}
