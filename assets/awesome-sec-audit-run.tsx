@@ -9,7 +9,7 @@ const item = document.getElementById("content");
 if (item == null) {
     console.log("Render container missing");
 }
-    else {
+else {
     ReactDOM.render(
         <Start />,
         item
