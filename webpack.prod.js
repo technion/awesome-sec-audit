@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const ClosureCompilerPlugin = require('webpack-closure-compiler');
 
 module.exports = {
   context: __dirname,
@@ -15,14 +14,10 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new ClosureCompilerPlugin({
-      compiler: {
-        language_in: 'ECMASCRIPT5',
-        language_out: 'ECMASCRIPT5',
-        warningLevel: 'QUIET',
-        compilation_level: 'ADVANCED'
-      },
-        jsCompiler: true
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
     })
   ],
   module: {
