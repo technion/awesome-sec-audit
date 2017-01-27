@@ -15,19 +15,20 @@ module.exports = {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
+      comments: false,
       compress: {
         warnings: false
       }
     })
   ],
   module: {
-    loaders: [
-	  {
-	    test: /\.tsx$/,
+    rules: [
+      {
+        test: /\.tsx$/,
         exclude: /node_modules/,
-        loaders: ["ts-loader"],
+        use: ["ts-loader"],
       }
-	],
+    ],
   },
 }
 console.log("webpack running:");

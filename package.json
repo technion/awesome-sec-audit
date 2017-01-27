@@ -8,16 +8,15 @@
     "dev": "webpack --config webpack.debug.js",
     "tslint": "tslint assets/* || true",
     "build": "webpack -p --config webpack.prod.js"
-
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "ts-loader": "^1.2.2",
+    "ts-loader": "^2.0.0",
     "typescript": "^2.0.10",
-    "webpack": "^1.13.3"
+    "webpack": "^2.2.0"
   },
   "devDependencies": {
     "enzyme": "^2.6.0",
@@ -26,7 +25,7 @@
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-test-renderer": "^15.4.1",
-    "ts-jest": "^17.0.0"
+    "ts-jest": "^18.0.0"
   },
   "jest": {
     "transform": {

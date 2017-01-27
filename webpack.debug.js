@@ -10,13 +10,13 @@ module.exports = {
     path: __dirname + "/build",
   },
   module: {
-    loaders: [
-	  {
+    rules: [
+      {
 	    test: /\.tsx$/,
         exclude: /node_modules/,
-        loaders: ["ts-loader"],
+        use: ["ts-loader"],
       }
-	],
+    ],
   },
 }
 console.log("webpack running:");
